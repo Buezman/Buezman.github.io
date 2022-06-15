@@ -1,0 +1,84 @@
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins' , sans-serif;
+  }
+
+.container {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 100px;
+    background: rgb(239, 140, 157);
+    background-image: url(bg-intro-desktop.png);
+}
+
+.side-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin-left: 0;
+}
+.side-text > h1 {
+    font-size: 48px;
+}
+ 
+.form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 40px;
+    border-radius: 7px;
+}
+.form > input {
+    margin-bottom: 12px;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.top-text {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-weight: 400;
+    border-radius: 7px;
+    background: rgb(98, 14, 158);
+    text-align: center;
+    color: white;
+}
+.top-text > span {
+    font-weight: 200;
+}
+.form > button {
+    background: hsl(154, 59%, 51%);
+    padding: 15px 0 15px 0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.bottom-text {
+    color: rgb(193, 188, 188);
+    font-size: small;
+    text-align: center;
+}
+.bottom-text > a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    /* For mobile phones: */
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-image: url(bg-intro-mobile.png);
+    }
+  }
