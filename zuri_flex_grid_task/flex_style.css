@@ -4,7 +4,8 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
-    font-family: 'Lexend Deca', sans-serif;}
+    font-family: 'Lexend Deca', sans-serif;
+  }
   
   .container {
     display: flex;
