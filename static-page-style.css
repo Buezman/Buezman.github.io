@@ -1,0 +1,222 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+
+header {
+    /* width: 100%; */
+    background: hsl(187, 40%, 96%);
+    background-image: url("bg-hero-desktop.svg");
+    padding: 50px;
+    margin: 0;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+nav > button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    background: white;
+    align-self: flex-end;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    /* grid-template-columns: 50% 50%; */
+}
+.top > img {
+    display: flex;
+    align-self: flex-end;
+    width: 50%;
+}
+
+.get-started > button{
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.get-started > h1 {
+    font-size: 50px;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 130px 70px;
+
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;  
+    border: 3px solid rgb(243, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+}
+.card > img {
+    width: 40%;
+    height: fit-content;
+}
+
+.text > h1 {
+    font-size: 30px;
+}
+
+.small-card {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 3px solid rgb(243, 241, 241);
+    border-radius: 10px;
+    padding: 50px 0 50px 0;
+    /* z-index: -20px; */
+    background: white;
+    position: relative;
+    margin-bottom: -30px;
+    text-align: center;
+
+}
+p {
+    color: rgb(180, 173, 173);
+}
+.small-card > button {
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+footer {
+    background: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 50px 80px 0 80px;
+    margin-top: -50px;
+    margin-bottom: 0;
+    /* z-index: 20px; */
+}
+footer > h2 {
+    padding-top: 50px;
+    /* padding-left: 50px; */
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    /* justify-content: space-evenly; */
+}
+
+.contact {
+    /* width:70%; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact > img {
+    width: 17px;
+    height: 17px;
+}
+.about {
+    padding-left: 20px;
+}
+
+.bottom-text {
+    padding: 20px;
+    text-align: right;
+}
+.icon {
+    padding-top: 20px;
+}
+.icon > img {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+       display: grid;
+       grid-template-columns: auto;
+       gap: 30px;
+       justify-content: center;
+    }
+    header {
+        background-image: url("bg-hero-mobile.svg");
+        margin: 0;
+    }
+    .top {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .top > img {
+        width: 400px;
+        margin-top: 40px;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card > img {
+        width: 300px;
+    }
+    .footer-items {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+
+    .small-card {
+        width: 300px;
+    }
+
+    .get-started > button {
+        margin-top: 30px;
+    }
+    footer {
+        padding: 10px 0;
+    }
+    footer > h2 {
+        margin-left: 0;
+        padding-left: 50px;
+    }
+    footer > p {
+        text-align: center;
+    }
+    .icon {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .icon > img {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .about {
+        padding-left: 0;
+    }
+    .bottom-text {
+        text-align: center;
+    }
+}
