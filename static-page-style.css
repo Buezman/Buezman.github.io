@@ -3,13 +3,11 @@ body {
     flex-direction: column;
     margin: 0;
     justify-content: center;
-    /* align-items: center; */
-    width: 100vw;
+    width: fit-content;
     font-family: 'Poppins' , sans-serif;
   }
 
 header {
-    /* width: 100%; */
     background: hsl(187, 40%, 96%);
     background-image: url("bg-hero-desktop.svg");
     padding: 50px;
@@ -35,7 +33,6 @@ nav > button {
     align-items: center;
     padding-top: 30px;
     margin-bottom: 30px;
-    /* grid-template-columns: 50% 50%; */
 }
 .top > img {
     display: flex;
@@ -115,7 +112,6 @@ footer {
     padding: 50px 80px 0 80px;
     margin-top: -50px;
     margin-bottom: 0;
-    /* z-index: 20px; */
 }
 footer > h2 {
     padding-top: 50px;
@@ -127,11 +123,9 @@ footer > h2 {
 .footer-items {
     display: grid;
     grid-template-columns: 40% 20% 20% 20%;
-    /* justify-content: space-evenly; */
 }
 
 .contact {
-    /* width:70%; */
     display: flex;
     align-items: center;
     gap: 20px;
